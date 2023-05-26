@@ -7,5 +7,3 @@
 - Realizar el desafío
 
 - Carpeta del Backend es el desarrollo del desafio.
-
-- Para el frondend fue utilizado el proyecto del compañero Felipe
