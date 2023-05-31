@@ -1,4 +1,12 @@
 export const handleErrors = (code) => {
+
+    if(!code){
+        return{
+            status: 500,
+            message: "server error, unknown code",
+        };
+    }
+
     switch (code) {
         case "22P02":
         return {
@@ -9,6 +17,16 @@ export const handleErrors = (code) => {
         return {
             status: 400,
             message: "Incorrect postgres password",
+        };
+        case "42601":
+        return {
+            status: 400,
+            message: "Incorrect postgres judgment",
+        };
+        case "42P01":
+        return {
+            status: 400,
+            message: "relation name table does not exist",
         };
         case "3D000":
         return {
